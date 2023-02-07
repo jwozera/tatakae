@@ -1,5 +1,0 @@
-dig www.tatakae.art +nostats +nocomments +nocmd
-;www.tatakae.art                   IN      A
-www.tatakae.art.             3592    IN      CNAME   jwozera.github.io/tatakae.
-jwozera.github.io/tatakae.      43192   IN      CNAME   GITHUB-PAGES-SERVER .
-GITHUB-PAGES-SERVER .         22      IN      A       192.0.2.1
