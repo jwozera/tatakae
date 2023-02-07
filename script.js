@@ -1,3 +1,8 @@
+window.addEventListener("load", function () {
+    const loader = document.querySelector(".loader");
+    loader.className += " hidden"; // class "loader hidden"
+});
+
 gsap.registerPlugin(ScrollTrigger);
 ScrollTrigger.defaults({
     toggleActions: "play complete reverse repeat"
@@ -47,7 +52,7 @@ gsap.to(".bg",
 gsap.fromTo(".text-box",
 
     {
-        opacity: 0,
+        opacity: 0.1,
         y: -200,
         textShadow: "#fff 0px 0px",
     },
