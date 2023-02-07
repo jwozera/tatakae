@@ -168,6 +168,7 @@ body {
     background-size: cover;
     background-position: center;
     overflow: hidden;
+    margin-bottom: 100px;
     /* border: #282D3C 5px solid; */
 }
 
@@ -318,6 +319,7 @@ body {
     background-position: center 20%;
     background-repeat: no-repeat;
     align-items: flex-end;
+    padding-bottom: 50px;
 }
 
 #section-last .section-content .section-paragraph {
