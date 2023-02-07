@@ -203,17 +203,17 @@ body {
 
 
 .flag-sec {
-    margin-top: -50px;
+    margin-top: -80px;
     padding: 50px 0;
     height: 50vh;
     flex-direction: column;
-    transform: skewY(-11deg);
+    transform: skewY(-5deg);
     position: relative;
     z-index: 2;
 }
 
 .flag-sec .section-content {
-    transform: skewY(11deg);
+    transform: skewY(5deg);
 }
 
 #section-intro {
@@ -306,14 +306,19 @@ body {
 }
 
 .image-bg {
-    margin-top: -10px;
     width: 100%;
     height: 300px;
     object-fit: cover;
 }
 
+.akira {
+    margin-top: -50px;
+}
+
 .lee {
     transform: scaleX(-1);
+    margin-bottom: -10px;
+
 }
 
 
@@ -323,6 +328,9 @@ body {
     background-position: center 20%;
     background-repeat: no-repeat;
     align-items: flex-end;
+}
+
+#section-last .section-content {
     padding-bottom: 50px;
 }
 
