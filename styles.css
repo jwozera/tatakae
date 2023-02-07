@@ -281,6 +281,7 @@ body {
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), url(/img/bg1.jpg);
     height: 120%;
     background-size: cover;
+    width: 95%;
 }
 
 #section-manifest .section-content h1 {
