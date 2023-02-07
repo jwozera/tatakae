@@ -64,33 +64,12 @@ gsap.fromTo(".text-box",
         scrollTrigger: {
             trigger: ".text-box",
             start: "200 100",
-            end: "+=1000",
+            end: "1000",
             scrub: false,
             toggleActions: "play complete resume"
         },
 
     });
-
-
-
-// thats for the scroll snap between sections
-const sections = gsap.utils.toArray('section')
-
-// ScrollTrigger.create({
-//     trigger: '.first',
-//     start: 'top top',
-//     endTrigger: '.last',
-//     end: 'bottom bottom',
-//     pin: true,
-//     markers: false,
-//     scrub: 1, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
-//     snap: {
-//         snapTo: [0.216, 0.418, 0.600, , 0.806, 0.931],
-//         duration: { min: 0.25, max: 2.75 }, // the snap animation should be at least 0.2 seconds, but no more than 3 seconds (determined by velocity)
-//         delay: 0, // wait 0.2 seconds from the last scroll event before doing the snapping
-//         ease: "power1.inOut" // the ease of the snap animation ("power3" by default)
-//     }
-// });
 
 let boxes = gsap.utils.toArray("section"),
     container = document.querySelector("body"),
