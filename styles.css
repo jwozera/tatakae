@@ -173,7 +173,6 @@ body {
     background-position: center;
     overflow: hidden;
     margin-bottom: 100px;
-    /* border: #282D3C 5px solid; */
 }
 
 .greater-sec {
@@ -219,6 +218,7 @@ body {
 
 #section-intro {
     position: relative;
+    margin-bottom: 0px;
 }
 
 #section-intro .gradient {
