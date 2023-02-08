@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Zen+Kaku+Gothic+New:wght@400;900&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     color: #fff;
     background-color: #282D3C;
@@ -216,12 +220,12 @@ body {
     transform: skewY(5deg);
 }
 
-#section-intro {
+#intro {
     position: relative;
     margin-bottom: 0px;
 }
 
-#section-intro .gradient {
+#intro .gradient {
     background-image: linear-gradient(to top, rgba(0, 0, 0, 0)0%, rgba(0, 0, 0, 0.7) 60%);
     position: absolute;
     left: 0;
@@ -231,13 +235,13 @@ body {
     z-index: 2;
 }
 
-#section-intro .section-content {
+#intro .section-content {
     position: relative;
     height: 100%;
     width: 100%;
 }
 
-#section-intro .text-box {
+#intro .text-box {
     font-size: 1.6em;
     position: absolute;
     top: 20%;
@@ -246,15 +250,16 @@ body {
     flex-direction: column;
     justify-items: center;
     align-items: center;
+    opacity: 0;
 }
 
-#section-intro .text-box span {
+#intro .text-box span {
     font-family: 'Zen Kaku Gothic New', sans-serif;
     font-size: 5em;
     font-weight: 900;
 }
 
-#section-intro .section-content .bg {
+#intro .section-content .bg {
     position: absolute;
     object-fit: cover;
     bottom: 0;
@@ -263,10 +268,11 @@ body {
     max-width: 100%;
 }
 
-#section-intro .section-content .overlay {
+#intro .section-content .overlay {
     position: absolute;
     max-height: 80%;
     max-width: 100%;
+    transform-origin: 100% 100%;
     bottom: 0;
     right: 0;
     z-index: 2;
@@ -338,8 +344,6 @@ body {
     display: block;
 }
 
-
-
 .button {
     display: inline-block;
     margin: 50px 0 0;
@@ -395,5 +399,52 @@ body {
     100% {
         opacity: 0;
         visibility: hidden;
+    }
+}
+
+@keyframes fadeInText {
+    0% {
+        opacity: 0.1;
+        top: 0;
+    }
+
+    100% {
+        opacity: 1;
+        top: 20%;
+    }
+}
+
+.fadeInTextClass {
+    animation: fadeInText 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes scaleUpBg {
+    100% {
+        transform: scale(1.2)
+    }
+}
+
+.scaleUpBgClass {
+    animation: scaleUpBg 2s;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes scaleDownOverlay {
+    100% {
+        transform: scale(0.8);
+    }
+}
+
+.scaleDownOverlayClass {
+    animation: scaleDownOverlay 2s;
+    animation-fill-mode: forwards;
+}
+
+
+@media screen and (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
     }
 }
