@@ -34,7 +34,8 @@ body {
 }
 
 .nav .logo {
-    width: 4em;
+    width: 3em;
+    padding: 18px 12px;
 }
 
 .menu-icon {
